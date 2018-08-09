@@ -1,0 +1,430 @@
+﻿@{
+    ViewBag.Title = "RegistroInspeccion";
+}
+<div class="top-content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-2 col-lg-12 col-lg-offset-3 form-box">
+                <form role="form" action="" method="post" class="f1">
+
+                    <h3>Registro de Inspección</h3>
+                    <div class="f1-steps">
+                        <div class="f1-progress">
+                            <div class="f1-progress-line" data-now-value="50.66" data-number-of-steps="4" style="width: 50.66%;"></div>
+                        </div>
+                        <div class="f1-step active">
+                            <div class="f1-step-icon"><i class="fas fa-user-edit"></i></div>
+                            <p>Datos generales del contratante</p>
+                        </div>                        
+                        <div class="f1-step">
+                            <div class="f1-step-icon"><i class="fas fa-file-contract"></i></div>
+                            <p>Datos de la inspección y Datos comerciales</p>
+                        </div>
+                        <div class="f1-step">
+                            <div class="f1-step-icon"><i class="fas fa-car-side"></i></div>
+                            <p>Datos del vehículo</p>
+                        </div>
+                       
+                        <div class="f1-step">
+                            <div class="f1-step-icon"><i class="fas fa-car-side"></i></div>
+                            <p>Accesorios del vehículo</p>
+                        </div>
+
+                    </div>
+
+                    <fieldset>
+                        <h4>Datos del contratante:</h4>
+                        <div id="contenedor_errorMessage" class="alert alert-danger Ocultar" role="alert">
+                            <span id="errorMessage">simple danger alert—check it out!</span>
+                        </div>
+                        <div style="height: 10px;"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label>Persona:</label>
+                                    <select class="form-control" id="sp_tipocontratante" name="sp_tipocontratante">
+                                        <option value="">Natural</option>
+                                        <option value="">Juridica</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>DNI:</label>
+                                    <input type="text" class="form-control" id="placa_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nacionalidad:</label>
+                                    <input type="text" class="form-control" id="nromotor_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Teléfono:</label>
+                                    <input type="text" class="form-control" id="nroserie_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input type="text" class="form-control" id="nroserie_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Dirección:</label>
+                                    <input type="text" class="form-control" id="nroserie_reg">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label>Distrito:</label>
+                                    <select class="form-control" id="sp_Distrito" name="sp_Distrito">
+                                        <option value="">SAN ISIDRO</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label>Nombres y apellidos:</label>
+                                    <input type="text" class="form-control" id="nroserie_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nacimiento:</label>
+                                    <input type="text" class="form-control" id="nroasientos_reg">
+                                </div>
+
+                                
+
+                                <div class="form-group">
+                                    <label>Celular:</label>
+                                    <input type="text" class="form-control" id="sumaasegurada_reg">
+                                </div>
+
+                               
+                                <div class="form-group">
+                                    <label>Referencia:</label>
+                                    <input type="text" class="form-control" id="nroserie_reg">
+                                </div>                                
+
+                                <div class="form-group">
+                                    <label>Provincia:</label>
+                                    <select class="form-control" id="sp_Provincia" name="sp_Provincia">
+                                        <option value="">LIMA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label>Sexo:</label>
+                                    <select class="form-control" id="sp_Sexo" name="sp_Sexo">
+                                        <option value="">Masculino</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Estado civil:</label>
+                                    <select class="form-control" id="sp_EstadoCivil" name="sp_EstadoCivil">
+                                        <option value="">Casado</option>
+                                    </select>
+                                </div>
+
+                                <div style="height:5.7rem;">
+
+                                </div>
+
+                                
+                                <div style="height:11.5rem;">
+                                    
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Departamento:</label>
+                                    <select class="form-control" id="sp_Departamento" name="sp_Departamento">
+                                        <option value="">LIMA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            
+
+                        </div>
+
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-next">Siguiente</button>
+                        </div>
+
+                    </fieldset>
+                    
+                    <fieldset>
+                        <h4>Datos de la inspección:</h4>
+                        <div style="height: 10px;"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label>Motivo</label>
+                                    <input type="text" class="form-control" id="nombres_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo vía</label>
+                                    <input type="text" class="form-control" id="nombres_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Dirección</label>
+                                    <input type="text" class="form-control" id="nombres_reg">
+                                </div>
+                               
+                                <div class="form-group">
+                                    <label>Nro / Interior</label>
+                                    <input type="text" class="form-control" id="nombres_reg">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Distrito:</label>
+                                    <select class="form-control" id="sp_Distrito" name="sp_Distrito">
+                                        <option value="">SAN ISIDRO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label>Fecha y hora:</label>
+                                    <input type="text" class="form-control" id="nrodocumento_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Referencia:</label>
+                                    <input type="text" class="form-control" id="fecnaci_reg">
+                                </div>                                
+                                <div class="form-group">
+                                    <label>Provincia:</label>
+                                    <select class="form-control" id="sp_Provincia" name="sp_Provincia">
+                                        <option value="">LIMA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div style="height:11.5rem;"></div>
+                                <div class="form-group">
+                                    <label>Departamento:</label>
+                                    <select class="form-control" id="sp_Departamento" name="sp_Departamento">
+                                        <option value="">LIMA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            </div>
+
+                        <br>
+
+                        <h4>Datos comerciales:</h4>
+                        <div style="height: 10px;"></div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Corredor agente:</label>
+                                <input type="text" class="form-control" id="nrodocumento_reg">
+                            </div>                            
+                            <div class="form-group">
+                                <label>Oficina comercial:</label>
+                                <input type="text" class="form-control" id="nrodocumento_reg">
+                            </div>
+                        </div>
+
+
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-previous">Anterior</button>
+                            <button type="button" class="btn btn-next">Siguiente</button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <h4>Datos del vehículo:</h4>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-4">
+                                <label>Marca:</label>
+                                <select class="form-control" id="sp_MarcaVehiculo" name="sp_MarcaVehiculo">
+                                    <option value="">Toyota</option>
+                                </select>
+                                <div class="form-group">
+                                    <label>Placa:</label>
+                                    <input type="text" class="form-control" id="placa_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Año:</label>
+                                    <select class="form-control" id="sp_anioFabricacion">
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Color:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Kilometraje:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label>Modelo:</label>
+                                    <select class="form-control" id="sp_ModeloVehiculo" name="sp_ModeloVehiculo">
+                                        <option value="">Yaris</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo:</label>
+                                    <select class="form-control" id="sp_TipoVehiculo" name="sp_TipoVehiculo">
+                                        <option value="">Automóvil</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nro Serie:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tracción:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Origen:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                
+                                <div class="form-group">
+                                    <label>Transmisión:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nro de Motor:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Combustible:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Puertas:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-previous">Anterior</button>
+                            <button type="button" class="btn btn-next">Siguiente</button>
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <h4>Producto a Emitir:</h4>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-4">
+                                <label>Marca:</label>
+                                <select class="form-control" id="sp_MarcaVehiculo" name="sp_MarcaVehiculo">
+                                    <option value="">Toyota</option>
+                                </select>
+                                <div class="form-group">
+                                    <label>Placa:</label>
+                                    <input type="text" class="form-control" id="placa_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Año:</label>
+                                    <select class="form-control" id="sp_anioFabricacion">
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Color:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Kilometraje:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label>Modelo:</label>
+                                    <select class="form-control" id="sp_ModeloVehiculo" name="sp_ModeloVehiculo">
+                                        <option value="">Yaris</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo:</label>
+                                    <select class="form-control" id="sp_TipoVehiculo" name="sp_TipoVehiculo">
+                                        <option value="">Automóvil</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nro Serie:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tracción:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Origen:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label>Sub - Modelo:</label>
+                                    <select class="form-control" id="sp_ModeloVehiculo" name="sp_ModeloVehiculo">
+                                        <option value="">Yaris</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Transmisión:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nro de Motor:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Combustible:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Puertas:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado:</label>
+                                    <input type="text" class="form-control" id="color_reg">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-previous">Anterior</button>
+                            <button on type="button" class="btn btn-next" onclick="RegistrarPoliza_onclick()">Guardar</button>
+                        </div>
+
+                    </fieldset>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

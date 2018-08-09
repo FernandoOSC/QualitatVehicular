@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Genesis Vehicular</title>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/form-elements.css" rel="stylesheet" />
+    <link href="~/Content/styleLayout.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Top menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blues">
+        <a class="navbar-brand" href="#">Génesis Vehicular</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+
+    <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.backstretch.min.js"></script>
+    <script src="~/Scripts/retina-1.1.0.min.js"></script>
+    <script src="~/Scripts/scriptsRegPoliza.js"></script>
+    <script src="~/Scripts/icons.js"></script>
+
+</body>
+</html>
